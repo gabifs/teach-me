@@ -1,0 +1,82 @@
+[
+ {
+  "role": "user",
+  "content": "why sky is blue"
+ },
+ {
+  "role": "assistant",
+  "content": "(Created Lesson 1: Why the Sky Is Blue)\nTry the lesson’s quiz to check your understanding!"
+ },
+ {
+  "role": "user",
+  "content": "[quiz answer] Lesson 1, sky-blue. Question: Why does the daytime sky look blue? Learner chose: Air molecules scatter blue light more strongly than red light.. Correct answer: Air molecules scatter blue light more strongly than red light.. Right."
+ },
+ {
+  "role": "assistant",
+  "content": "Correct! You understand that air molecules scatter blue light more strongly than red light."
+ },
+ {
+  "role": "user",
+  "content": "proxima lição"
+ },
+ {
+  "role": "assistant",
+  "content": "(Created Lesson 2: Por que o pôr do sol é avermelhado?)\nExperimente o quiz da lição!"
+ },
+ {
+  "role": "user",
+  "content": "[quiz answer] Lesson 2, q1. Question: Por que o Sol parece mais avermelhado ao se pôr? Learner chose: Porque a atmosfera produz luz vermelha nessa hora.. Correct answer: Porque mais luz azul se espalha no trajeto maior.. Wrong."
+ },
+ {
+  "role": "assistant",
+  "content": "Quase! No pôr do sol, a luz percorre um caminho maior pela atmosfera, espalhando mais luz azul e deixando mais luz avermelhada chegar aos nossos olhos."
+ },
+ {
+  "role": "user",
+  "content": "Teach me how to read a guitar chord chart"
+ },
+ {
+  "role": "assistant",
+  "content": "(Created Lesson 3: How to Read a Guitar Chord Chart)\nTry the lesson’s quiz to check your understanding!"
+ },
+ {
+  "role": "user",
+  "content": "[quiz answer] Lesson 3, open-string. Question: What does an O above a string mean? Learner chose: Play the string without fretting it. Correct answer: Play the string without fretting it. Right."
+ },
+ {
+  "role": "assistant",
+  "content": "Correct! An **O** means you play the string open, without pressing it against a fret."
+ },
+ {
+  "role": "user",
+  "content": "Teach me what a database index actually does"
+ },
+ {
+  "role": "assistant",
+  "content": "(Created Lesson 4: What a Database Index Actually Does)\nTry the lesson’s quiz to check your understanding!"
+ },
+ {
+  "role": "user",
+  "content": "[quiz answer] Lesson 4, index-lookup. Question: Why can an email index speed up a selective lookup? Learner chose: It lets the database find matching rows without checking every row.. Correct answer: It lets the database find matching rows without checking every row.. Right."
+ },
+ {
+  "role": "assistant",
+  "content": "Correct! An index can help the database find matching rows without scanning the entire table."
+ },
+ {
+  "role": "user",
+  "content": "Teach me why the moon always shows the same face"
+ },
+ {
+  "role": "assistant",
+  "content": "(Created Lesson 5: Why the Moon Shows Us Nearly the Same Face)\nTry the lesson’s quiz to check your understanding!"
+ },
+ {
+  "role": "user",
+  "content": "[quiz answer] Lesson 5, moon-rotation. Question: Why does nearly the same side of the Moon face Earth? Learner chose: The Moon rotates once per Earth day.. Correct answer: The Moon rotates once per Earth orbit.. Wrong."
+ },
+ {
+  "role": "assistant",
+  "content": "Not quite: the Moon rotates once in about the same time it takes to orbit Earth, roughly 27 days. That’s why nearly the same side always faces us."
+ }
+]

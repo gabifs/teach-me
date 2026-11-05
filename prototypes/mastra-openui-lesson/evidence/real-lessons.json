@@ -1,0 +1,128 @@
+[
+ {
+  "topic": "Teach me how to read a guitar chord chart",
+  "text": "root = Lesson(\"How to Read a Guitar Chord Chart\", [p1, p2, p3, example, q1, q2])\np1 = Prose(\"A chord diagram shows the guitar neck as if it were standing upright. The six vertical lines are strings: the thick low E is on the left, and the thin high e is on the right. Horizontal lines are frets.\")\np2 = Prose(\"A thick line at the top represents the nut, the strip at the head of the neck. The first space below it is fret 1, the next is fret 2, and so on. If the diagram starts farther up the neck, a number beside it identifies the top fret shown.\")\np3 = Prose(\"A dot tells you where to press a string, in the space just behind a fret. Numbers on or near dots usually indicate fingers: 1 is index, 2 middle, 3 ring, and 4 pinky. An O above a string means play it open; an X means don’t play it.\\n\\nA barre is shown as a line or curved bar across several strings at one fret. Press those strings down with one finger, usually your index finger.\")\nexample = Callout(\"Try E minor: from thick low E to thin high e, play open, fret 2, fret 2, open, open, open. Place your middle finger on the A string and your ring finger on the D string, both at fret 2. Strum all six strings.\")\nq1 = Quiz(\"open-string\", \"What does an O above a string mean?\", [\"Play the string without fretting it\", \"Press the string at the first fret\", \"Leave the string out of the strum\"], 0, \"O means an open string: play it without pressing it down.\")\nq2 = Quiz(\"barre\", \"What does a bar across several strings indicate?\", [\"Play those strings without fretting\", \"Press those strings with one finger\", \"Avoid those strings when strumming\"], 1, \"A barre uses one finger to press multiple strings at the same fret.\")\n",
+  "usage": {
+   "inputTokens": 774,
+   "outputTokens": 834,
+   "totalTokens": 1608,
+   "reasoningTokens": 391,
+   "cachedInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "raw": {
+    "inputTokens": {
+     "total": 774,
+     "noCache": 774,
+     "cacheRead": 0,
+     "cacheWrite": 0
+    },
+    "outputTokens": {
+     "total": 834,
+     "text": 443,
+     "reasoning": 391
+    },
+    "raw": {
+     "input_tokens": 774,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 834,
+     "output_tokens_details": {
+      "reasoning_tokens": 391
+     },
+     "total_tokens": 1608
+    }
+   }
+  },
+  "ms": {
+   "firstDelta": 8225,
+   "total": 12761
+  },
+  "state": {}
+ },
+ {
+  "topic": "Teach me what a database index actually does",
+  "text": "root = Lesson(\"What a Database Index Actually Does\", [p1, p2, p3, c1, q1])\np1 = Prose(\"A database index is a separate searchable structure that maps indexed values to the rows containing them. Think of a book’s index: instead of reading every page to find “volcano,” you look up the word and follow its page references.\")\np2 = Prose(\"For example, `SELECT * FROM customers WHERE email = 'ana@example.com';` can use an index on `email` to find the matching row without checking every customer. This is especially helpful when the condition matches only a small fraction of the table.\")\np3 = Prose(\"A common index uses a B-tree: it keeps values ordered in a balanced tree, so the database can narrow its search at each level. That ordering also helps with range queries, such as finding dates between two values.\")\nc1 = Callout(\"Indexes take extra storage and can slow inserts, updates, and deletes because the database must maintain them. If a query matches much of the table, a full scan may be faster.\")\nq1 = Quiz(\"index-lookup\", \"Why can an email index speed up a selective lookup?\", [\"It removes the need to store customer rows.\", \"It lets the database find matching rows without checking every row.\", \"It makes every query scan the table in sorted order.\", \"It prevents the database from updating customer records.\"], 1, \"The index provides a separate searchable path from email values to matching rows, avoiding a full scan when the lookup is selective.\")\n",
+  "usage": {
+   "inputTokens": 778,
+   "outputTokens": 328,
+   "totalTokens": 1106,
+   "reasoningTokens": 0,
+   "cachedInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "raw": {
+    "inputTokens": {
+     "total": 778,
+     "noCache": 778,
+     "cacheRead": 0,
+     "cacheWrite": 0
+    },
+    "outputTokens": {
+     "total": 328,
+     "text": 328,
+     "reasoning": 0
+    },
+    "raw": {
+     "input_tokens": 778,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 328,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 1106
+    }
+   }
+  },
+  "ms": {
+   "firstDelta": 1211,
+   "total": 5074
+  },
+  "state": {}
+ },
+ {
+  "topic": "Teach me why the moon always shows the same face",
+  "text": "root = Lesson(\"Why the Moon Shows Us Nearly the Same Face\", [p1, p2, c1, q1])\np1 = Prose(\"The Moon is tidally locked to Earth: it rotates once on its axis in approximately the same time it takes to orbit Earth. As a result, nearly the same lunar hemisphere always faces us.\")\np2 = Prose(\"The Moon does rotate. Imagine walking around a table while always facing its center: you turn once as you make one circuit. The Moon does something similar as it orbits Earth.\")\nc1 = Callout(\"A slight apparent wobble called libration lets us see a little more than half of the Moon’s surface over time.\")\nq1 = Quiz(\"moon-rotation\", \"Why does nearly the same side of the Moon face Earth?\", [\"The Moon does not rotate on its axis.\", \"The Moon rotates once per Earth orbit.\", \"The Moon rotates once per Earth day.\"], 1, \"The Moon’s rotation and orbital periods are approximately equal, so nearly the same hemisphere faces Earth.\")\n",
+  "usage": {
+   "inputTokens": 783,
+   "outputTokens": 222,
+   "totalTokens": 1005,
+   "reasoningTokens": 0,
+   "cachedInputTokens": 0,
+   "cacheCreationInputTokens": 0,
+   "raw": {
+    "inputTokens": {
+     "total": 783,
+     "noCache": 783,
+     "cacheRead": 0,
+     "cacheWrite": 0
+    },
+    "outputTokens": {
+     "total": 222,
+     "text": 222,
+     "reasoning": 0
+    },
+    "raw": {
+     "input_tokens": 783,
+     "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+     },
+     "output_tokens": 222,
+     "output_tokens_details": {
+      "reasoning_tokens": 0
+     },
+     "total_tokens": 1005
+    }
+   }
+  },
+  "ms": {
+   "firstDelta": 1339,
+   "total": 4004
+  },
+  "state": {}
+ }
+]
