@@ -24,6 +24,18 @@ _Avoid_: Goal, objective
 One short, self-contained piece of teaching on a single tightly-scoped thing, tied to the Mission and giving one tangible win.
 _Avoid_: Module, chapter, explainer
 
+**Exercise**:
+Something in a Lesson the learner answers, once, as evidence of what they know. Either a Quiz or an Open Question.
+_Avoid_: Test, assessment
+
+**Quiz**:
+An Exercise where the learner picks the one correct answer from several choices.
+_Avoid_: Multiple choice question
+
+**Open Question**:
+An Exercise where the learner writes their own answer and the Teacher judges it.
+_Avoid_: Discursive question, essay
+
 **Learning Record**:
 A decision-grade note of something non-obvious about what the learner knows: understanding demonstrated, prior knowledge disclosed, misconception corrected, or Mission shifted. Coverage alone never earns one.
 _Avoid_: Progress entry, log
