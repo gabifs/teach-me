@@ -1,0 +1,39 @@
+/* PROTOTYPE, throwaway. Astryx + Tailwind bridge, CSS order from the Astryx core README. */
+@layer reset, theme, base, astryx-base, astryx-theme, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "@astryxdesign/core/reset.css";
+@import "@astryxdesign/core/astryx.css";
+@import "@astryxdesign/theme-neutral/theme.css";
+@import "@astryxdesign/theme-stone/theme.css";
+@import "@astryxdesign/theme-gothic/theme.css";
+@import "@astryxdesign/core/tailwind-theme.css";
+@import "tailwindcss/utilities.css" layer(utilities);
+
+html, body, #root { height: 100%; margin: 0; }
+body { font-family: var(--font-family-body); background: var(--color-background-body); overscroll-behavior: none; }
+.app { height: 100dvh; display: flex; flex-direction: column; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
+
+/* Tufte-style reading typography. Sidenotes sit in the margin when the Lesson column has
+   room (container query, so it works inside a chat, a pane or a page), inline otherwise. */
+.lesson { container: lesson / inline-size; font-family: "Newsreader", Georgia, serif; color: var(--color-text-primary); font-size: 1.1875rem; line-height: 1.55; font-optical-sizing: auto; }
+.lesson p, .lesson h2, .lesson .sidenote { font-family: "Newsreader", Georgia, serif; }
+.lesson .sidenote { font-size: .9375rem; }
+.lesson-eyebrow { font-family: var(--font-family-body); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--color-text-secondary); }
+.lesson h2 { font-size: 1.75rem; line-height: 1.2; font-weight: 400; margin: .25rem 0 1.25rem; }
+.lesson p { margin: 0 0 1rem; font-size: 1.1875rem; line-height: 1.55; }
+.lesson-col { max-width: 34rem; }
+.sidenote { display: block; font-size: .875rem; line-height: 1.4; color: var(--color-text-secondary); border-left: 2px solid var(--color-border); padding-left: .75rem; margin: .5rem 0 1rem; }
+.sidenote-mark { font-size: .7em; vertical-align: super; color: var(--color-text-secondary); }
+@container lesson (min-width: 800px) {
+  .lesson-col { width: 62%; max-width: none; }
+  .sidenote { float: right; clear: right; width: 50%; margin: 0 -60% 1rem 0; border-left: 0; padding-left: 0; }
+}
+.tab { font-family: ui-monospace, Menlo, monospace; font-size: .9rem; margin: 0 0 1rem; line-height: 1.35; white-space: pre; overflow-x: auto; }
+.quiz { font-family: var(--font-family-body); font-size: 1rem; border-top: 1px solid var(--color-border); margin-top: 1.5rem; padding-top: 1rem; }
+.fade { animation: fade .3s ease-out; }
+@keyframes fade { from { opacity: 0; transform: translateY(4px); } }
+
+.switcher { position: fixed; z-index: 99999; right: 6px; top: calc(env(safe-area-inset-top) + 62px); background: #111; color: #fff; font: 12px system-ui; border-radius: 999px; padding: 4px 8px; display: flex; gap: 8px; align-items: center; box-shadow: 0 2px 10px #0006; }
+@media (min-width: 768px) { .switcher { top: calc(env(safe-area-inset-top) + 12px); right: 50%; transform: translateX(50%); } }
