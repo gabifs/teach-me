@@ -13,7 +13,7 @@ The agent the learner converses with. It interviews, teaches, answers questions,
 _Avoid_: Bot, tutor, assistant
 
 **Workspace**:
-Everything belonging to one learner's pursuit of one Mission: its Lessons, Learning Records, Resources, and its continuous conversation with the Teacher. A learner can have many.
+Everything belonging to one learner's pursuit of one Mission: its Lessons, Learning Records, Resources, Notes, and its continuous conversation with the Teacher. A learner can have many.
 _Avoid_: Course, topic, project
 
 **Mission**:
@@ -47,6 +47,10 @@ _Avoid_: Level, difficulty
 **Resource**:
 A curated, annotated, high-trust source. Knowledge Resources ground Lessons; Wisdom Resources are communities to practise with.
 _Avoid_: Link, reference
+
+**Notes**:
+What the Teacher keeps about how this learner wants to be taught, within one Workspace.
+_Avoid_: Preferences, memory
 
 ## Flagged ambiguities
 
